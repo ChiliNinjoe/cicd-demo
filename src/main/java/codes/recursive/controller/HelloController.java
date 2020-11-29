@@ -11,7 +11,7 @@ public class HelloController {
   }
 
   @Get("/version")
-  public HttpResponse<Map> getVersion() {
-    return HttpResponse.ok(Map.of("version", "0.1"));
+  public String getVersion() {
+    return "{\"version\": \"0.1\"}";
   }
 }
